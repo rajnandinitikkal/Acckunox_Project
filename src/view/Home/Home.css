@@ -2,4 +2,9 @@
     background-color: aqua;
     min-height: 100vh;
     font-size: 30px;
+    padding: 20PX;
+    width: 100%;
+}
+a{
+    text-decoration: none;
 }

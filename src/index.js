@@ -1,6 +1,4 @@
 import ReactDOM from 'react-dom/client';
-import Navbar from './components/Navbar/Navbar'
-import Footer from './components/footer/footer'
 import { RouterProvider , createBrowserRouter } from 'react-router-dom';
 import Home from './view/Home/Home';
 import About from './view/About/About';
@@ -19,15 +17,14 @@ const router = createBrowserRouter([
   },
   {
     path:'/Contact',
-    element:<Contact/>
+    element
+    :<Contact/>
   },
 ])
 
 root.render(
   <div>
-    <Navbar/>
     <RouterProvider router={router}/>
-    <Footer/> 
   </div>
  
 );

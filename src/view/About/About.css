@@ -1,4 +1,6 @@
 .about-container{
     background-color: antiquewhite;
     min-height: 100vh;
+    padding: 20px;
+    font-size: 30px;
 }
