@@ -1,31 +1,30 @@
 import ReactDOM from 'react-dom/client';
-import { RouterProvider , createBrowserRouter } from 'react-router-dom';
-import Home from './view/Home/Home';
-import About from './view/About/About';
-import Contact from './view/Contact/Contact';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import About from './View/About/About';
+import Login from './View/Login/Login';
+import Home from './';
+
+import { RouterProvider , createBrowserRouter } from 'react-router-dom';
 
 const router = createBrowserRouter([
-  {
-    path:'/',
-    element:<Home/>
-  },
-  {
-    path:'/About',
-    element:<About/>
-  },
-  {
-    path:'/Contact',
-    element
-    :<Contact/>
-  },
+ { path:"/" ,
+  element : <Home/>
+ },
+ { path:"/About" ,
+  element : <About/>
+ },
+ { path:"/Login" ,
+  element : <Login/>
+ },
 ])
 
+const root = ReactDOM.createRoot(document.getElementById('root'));
+ 
 root.render(
-  <div>
-    <RouterProvider router={router}/>
-  </div>
+  <> 
+  <RouterProvider router={router}/>
+ 
+</>
  
 );
 

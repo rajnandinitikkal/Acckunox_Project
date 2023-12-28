@@ -1,10 +1,7 @@
-.Home-container{
-    background-color: aqua;
+.about-container{
+    background-color: tan;
     min-height: 100vh;
-    font-size: 30px;
-    padding: 20PX;
-    width: 100%;
-}
-a{
-    text-decoration: none;
+    margin: 0;
+    padding: 20px;
+    font-size: 25px;
 }
